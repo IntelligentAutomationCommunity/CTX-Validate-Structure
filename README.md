@@ -27,14 +27,14 @@ Field Name | Description | Type | M/O |
 **VALUES**|A list of valid string values used to validate fields of type "string"|text|O
 **INCL_MIN**|The minimum value used to validate fields of type "integer"|integer|O
 **INCL_MAX**|The maximum value used to validate fields of type "integer"|integer|O
-
+**VALIDATION**|A list used to validate sub-structures or sub-lists in the input structure. Each element of this list must conform to a validation structure similar this **i_specification** input format. This validation may include validation of sub-sub-structures or sub-sub-lists, and so on|list|O
 
 ### Types
 The following types are supported by the subtask; you may add additional types as required
 - **text** - a string of characters; fields of this type are sanitised by removing single- and double-quote characters
 - **integer** - a number
-- **ref** - a structure with fields "ID" and "NAME", both of which are mandatory and of type string; used to validate TM Forum OpenAPI references
-- **ref-list** - a list of **ref** structures
+- **structure** - a structure; fields in this structure will be validated according to the **VALIDATION** field in the validation structure
+- **structure-list** - a list of structures; each structure in the list will be validated according to the **VALIDATION** field in the validation structure
 
 # Installation Instructions
 Download the Studio Package file and Import it into your Cortex Environment.
