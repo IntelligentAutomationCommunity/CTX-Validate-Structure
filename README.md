@@ -23,8 +23,8 @@ Field Name | Description | Type | M/O |
 **MANDATORY**|An indication of whether the field should exist in the input structure|true or false|M
 **TYPE**|The type of the field; see below for details on supported types|text|M
 **DEFAULT**|A value to use if the field is not present in the input structure; a field will be added to the **o_sanitised_output** output structure with this value|text or integer|O
-**PATTERN**|A regular expression used to validate fields of type "string"|text|O
-**VALUES**|A list of valid string values used to validate fields of type "string"|text|O
+**PATTERN**|A regular expression used to validate fields of type "text"|text|O
+**VALUES**|A list of valid string values used to validate fields of type "text"|text|O
 **INCL_MIN**|The minimum value used to validate fields of type "integer"|integer|O
 **INCL_MAX**|The maximum value used to validate fields of type "integer"|integer|O
 **VALIDATION**|A list used to validate sub-structures or sub-lists in the input structure. Each element of this list must conform to a validation structure similar this **i_specification** input format. This validation may include validation of sub-sub-structures or sub-sub-lists, and so on|list|O
