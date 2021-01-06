@@ -14,7 +14,7 @@ The subtask provides the following outputs:
 - **o_Errors**: a list of error messages generated during the validation process
 
 ## Validation
-The input structre is copied to the output structure and it is validated and sanitised accoring to the elements of the **i_specification** input list.
+The input structure is copied to the output structure and it is validated and sanitised according to the elements of the **i_specification** input list.
 
 The **i_specification** input list provides details on the validations to apply . Each element of the list is a validation structure, with the following fields:
 Field Name | Description | Type | M/O |
