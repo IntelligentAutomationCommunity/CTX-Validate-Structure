@@ -16,7 +16,7 @@ The subtask provides the following outputs:
 ## Validation
 The input structure is copied to the output structure and it is validated and sanitised according to the elements of the **i_specification** input list.
 
-The **i_specification** input list provides details on the validations to apply . Each element of the list is a validation structure, with the following fields:
+The **i_specification** input list provides details on the validations to apply. Each element of the list is a validation structure, with the following fields:
 Field Name | Description | Type | M/O |
 -----------|-------------|------|-----|
 **NAME**|The name of the field in the **i_structure** input structure to which this validation applies|text|M
